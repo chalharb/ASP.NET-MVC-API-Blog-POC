@@ -215,10 +215,20 @@
     <Compile Include="Migrations\202009231955328_InitialMigration.Designer.cs">
       <DependentUpon>202009231955328_InitialMigration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202009232007086_CreatedPostModel.cs" />
+    <Compile Include="Migrations\202009232007086_CreatedPostModel.Designer.cs">
+      <DependentUpon>202009232007086_CreatedPostModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202009232008365_CreatedTagModel.cs" />
+    <Compile Include="Migrations\202009232008365_CreatedTagModel.Designer.cs">
+      <DependentUpon>202009232008365_CreatedTagModel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\Post.cs" />
+    <Compile Include="Models\Tag.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\ApplicationOAuthProvider.cs" />
     <Compile Include="Results\ChallengeResult.cs" />
@@ -316,6 +326,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202009231955328_InitialMigration.resx">
       <DependentUpon>202009231955328_InitialMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202009232007086_CreatedPostModel.resx">
+      <DependentUpon>202009232007086_CreatedPostModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202009232008365_CreatedTagModel.resx">
+      <DependentUpon>202009232008365_CreatedTagModel.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
