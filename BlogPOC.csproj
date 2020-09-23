@@ -207,6 +207,8 @@
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PostsController.cs" />
+    <Compile Include="Controllers\TagsController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -223,6 +225,10 @@
     <Compile Include="Migrations\202009232008365_CreatedTagModel.Designer.cs">
       <DependentUpon>202009232008365_CreatedTagModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202009232014205_CreatedRelationshipForPostAndTag.cs" />
+    <Compile Include="Migrations\202009232014205_CreatedRelationshipForPostAndTag.Designer.cs">
+      <DependentUpon>202009232014205_CreatedRelationshipForPostAndTag.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -233,6 +239,7 @@
     <Compile Include="Providers\ApplicationOAuthProvider.cs" />
     <Compile Include="Results\ChallengeResult.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="ViewModels\AllPostsViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitignore" />
@@ -332,6 +339,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202009232008365_CreatedTagModel.resx">
       <DependentUpon>202009232008365_CreatedTagModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202009232014205_CreatedRelationshipForPostAndTag.resx">
+      <DependentUpon>202009232014205_CreatedRelationshipForPostAndTag.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
